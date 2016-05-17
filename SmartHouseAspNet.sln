@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHouseAspNet", "SmartHouseAspNet\SmartHouseAspNet.csproj", "{43CE4B95-68E9-46EE-9C4A-463B7EC24F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHouseAspNet.Tests", "SmartHouseAspNet.Tests\SmartHouseAspNet.Tests.csproj", "{977D6BF1-C577-44FA-928D-4F0B4F7087F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43CE4B95-68E9-46EE-9C4A-463B7EC24F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43CE4B95-68E9-46EE-9C4A-463B7EC24F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43CE4B95-68E9-46EE-9C4A-463B7EC24F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43CE4B95-68E9-46EE-9C4A-463B7EC24F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977D6BF1-C577-44FA-928D-4F0B4F7087F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977D6BF1-C577-44FA-928D-4F0B4F7087F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977D6BF1-C577-44FA-928D-4F0B4F7087F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977D6BF1-C577-44FA-928D-4F0B4F7087F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
