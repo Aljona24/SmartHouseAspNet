@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SmartHouseAspNet
+namespace SmartHouseAspNet.Models
 {
     public abstract class Scale
     {
+        public Scale(int level)
+        {
+            Level = level;
+        }
         private int level;//явно приват
+        
         //int max; readonly+ конструктор
         //енум устройство и оставить его одного , каррент, мин, мах, стэп
         // buss volume убираются 
@@ -21,11 +26,7 @@ namespace SmartHouseAspNet
                     level = value;
                 }
             }
-        }
-        public Scale(int level)
-        {
-            Level = level;
-        }
+        }       
 
         public int Decrease()
         {

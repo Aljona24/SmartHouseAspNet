@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SmartHouseAspNet
+namespace SmartHouseAspNet.Models
 {
     public class SelectChannel : ISwitch
     {
@@ -11,7 +11,9 @@ namespace SmartHouseAspNet
         {
             CurrentChannel = currentChannel;
         }
+        public int Id { get; set; }
         public int CurrentChannel { get; set; }
+
         Dictionary<int, string> channelsDb = new Dictionary<int, string>
         {
             {1, "1+1"}, {2, "Интер"}, {3, "СТБ"}, {4, "Украина"}, {5, "ICTV"}, {6, "Новый канал"},

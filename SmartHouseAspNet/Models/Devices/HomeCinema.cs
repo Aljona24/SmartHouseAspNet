@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Entity;
 
-namespace SmartHouseAspNet
+namespace SmartHouseAspNet.Models
 {
     public class HomeCinema : SwitchableDevice, IBrightness, IVolume, IBass, ISoundHighs, ISelectChannel
     {        
-        public HomeCinema(Scale bass, Scale brightness, Scale soundHighs, Scale volume, ISwitch _switch) // С маленькоф буквы параметры и без зис!
+        public HomeCinema(Scale bass, Scale brightness, Scale soundHighs, Scale volume, ISwitch _switch, string name)
         {
+            Name = name;
             Bass = bass;
             Brightness = brightness;
             SoundHighs = soundHighs;
@@ -16,11 +18,17 @@ namespace SmartHouseAspNet
             SelectChannel = _switch;
         }
 
+        public int Id { get; set; }
+        public string Name { get; set; }
         public Scale Bass { get; set; } //orders после конструктора
         public Scale Brightness { get; set; }
         public Scale SoundHighs { get; set; }
         public Scale Volume { get; set; }
         public ISwitch SelectChannel { get; set; }
+
+        public int? BassId { get; set; }
+        //public virtual Bass Bass { get; set; }
+
 
         public int Next()
         {

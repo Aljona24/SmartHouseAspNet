@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Entity;
 
-namespace SmartHouseAspNet
-{
+namespace SmartHouseAspNet.Models
+{ 
     public abstract class SwitchableDevice
     {
         public bool OnOff { get; set; }

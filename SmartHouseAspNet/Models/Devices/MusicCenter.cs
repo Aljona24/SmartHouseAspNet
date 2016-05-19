@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SmartHouseAspNet
+namespace SmartHouseAspNet.Models
 {
     public class MusicCenter : SwitchableDevice, IBass, IVolume, ISoundHighs, ISelectChannel
     {
-        public MusicCenter(Scale bass,  Scale soundHighs, Scale volume, ISwitch _switch)
+        public MusicCenter(Scale bass,  Scale soundHighs, Scale volume, ISwitch _switch, string name)
         {
+            Name = name;
             Bass = bass;
             SoundHighs = soundHighs;
             Volume = volume;
             SelectChannel = _switch;
         }
 
+        public int Id { get; set; }
+        public string Name { get; set; }
         public Scale Bass { get; set; }
         public Scale SoundHighs { get; set; }
         public Scale Volume { get; set; }

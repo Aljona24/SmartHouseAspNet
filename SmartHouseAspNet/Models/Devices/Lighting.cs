@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SmartHouseAspNet
+namespace SmartHouseAspNet.Models
 {
     public class Lighting : SwitchableDevice, IBrightness
     {
-        public Lighting(Scale scale)
+        public Lighting(Scale brightness, string name)
         {
-            this.Brightness = scale;
+            Name = name;
+            Brightness = brightness;
         }
 
+        public int Id { get; set; }
+        public string Name { get; set; }
         public Scale Brightness { get; set; }
 
         public int Decrease()
